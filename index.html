@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title> 작은 섬나라 일본으로 떠나다 </title>
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/default.css" />
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/ui.js"></script>
+</head>
+<body>
+
+	<!-- s: header -->
+	<header id="header_container">
+		<h1 class="logo"><a href="index.html"><img src="images/img_logo01.png" alt="작은 섬나라 일본으로 떠나다" /></a></h1>
+		<nav class="gnb_wrap">
+			<ul>
+				<li><a href="fes.html">FESTIVAL<span>FESTIVAL</span></a></li>
+				<li>
+					<a href="#none" onclick="japan.notFound()">PUBLIC_TRAFFIC<span>PUBLIC_TRAFFIC</span></a>
+					<ul>
+						<li><a href="sub_1.html">OSAKA<span>OSAKA</span></a></li>
+						<li><a href="sub_2.html">TOKYO<span>TOKYO</span></a></li>
+						<li><a href="sub_3.html">HUKUOKA<span>HUKUOKA</span></a></li>
+					</ul>
+				</li>
+				<li><a href="food.html">FOOD<span>FOOD</span></a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- e: header -->
+
+	<!-- s: main -->
+	<div id="main_container">
+
+		<!-- swiper -->
+		<div class="swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">
+					<section id="section01">
+						<div class="layer bgtxt animated jello" data-motion="jello"><img src="images/home/bgtxt.png" /></div>
+						<div class="layer center1 animated"><img src="images/home/center1.png" /></div>
+						<div class="layer center2 animated"><img src="images/home/center2.png" /></div>
+						<div class="layer txt animated fadeInUp" data-motion="fadeInUp">
+							손짓하는 행운의 복 고양이 <strong>마네키네코</strong><br />
+							넘어져도 다시 일어나는 오뚝이 <strong>다루마</strong>와 함께<br />
+							작은 섬나라 일본으로 떠나 보아요
+						</div>
+					</section>
+					<img src="images/img_scroll01.png" class="induceScrl animated floats" />
+				</li>
+				<li class="swiper-slide">
+					<section id="section02">
+						<div class="layer bgtxt2 animated"><img src="images/home/bgtxt2.png" /></div>
+						<div class="layer map animated"><img src="images/home/map.png" /></div>
+					</section>
+					<img src="images/img_scroll02.png" class="induceScrl2 animated floats" />
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- e: main -->
+
+	<script type="text/javascript">
+		$(function(){
+			var swiper = new Swiper('.swiper-container', {
+				speed: 400,
+				direction: 'vertical',
+				/*autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				},*/
+				slidesPerView: 1,
+				mousewheel: true,
+			});
+		});
+	</script>
+</body>
+</html>

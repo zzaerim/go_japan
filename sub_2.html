@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title> 작은 섬나라 일본으로 떠나다 </title>
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/default.css" />
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/ui.js"></script>
+</head>
+<body>
+
+	<!-- s: header -->
+	<header id="header_container">
+		<h1 class="logo"><a href="index.html"><img src="images/img_logo01.png" alt="작은 섬나라 일본으로 떠나다" /></a></h1>
+		<nav class="gnb_wrap">
+			<ul>
+				<li><a href="fes.html">FESTIVAL<span>FESTIVAL</span></a></li>
+				<li>
+					<a href="#none" onclick="japan.notFound()">PUBLIC_TRAFFIC<span>PUBLIC_TRAFFIC</span></a>
+					<ul>
+						<li><a href="sub_1.html">OSAKA<span>OSAKA</span></a></li>
+						<li class="on"><a href="sub_2.html">TOKYO<span>TOKYO</span></a></li>
+						<li><a href="sub_3.html">HUKUOKA<span>HUKUOKA</span></a></li>
+					</ul>
+				</li>
+				<li><a href="food.html">FOOD<span>FOOD</span></a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- e: header -->
+
+	<!-- s: sub -->
+	<div id="sub_container">
+		<!-- swiper -->
+		<div class="swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">
+					<section id="section01">
+						<div class="layer ticket1"><img src="images/sub/ticket1.png" /></div>
+						<div class="layer ticket2"><img src="images/sub/ticket2.png" /></div>
+						<div class="layer ticket3"><img src="images/sub/ticket3.png" /></div>
+						<div class="layer subtit1"><img src="images/sub/subtit1.png" /></div>
+						<div class="layer subtxt1">
+							1일권 (800엔) / 2일권 (1200엔) / 3일권 (1500엔)<br/>
+							도쿄 메트로 전 노선, 도영 지하철 전 노선 이용 가능<br/>
+							JR라인, 모노레일 이용 불가능
+						</div>
+					</section>
+				</li>
+				<li class="swiper-slide">
+					<section id="section02">
+						<div class="layer submap"><img src="images/sub/submap.png" /></div>
+						<div class="layer subtit2"><img src="images/sub/subtit2.png" /></div>
+						<div class="layer subtxt2">
+							1일권 (750엔)<br/>
+							JR라인, 도쿄 메트로 (지하철/트램/버스) 이용 가능
+						</div>
+					</section>
+				</li>
+				
+			</ul>
+			<!-- add pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+	<!-- e: sub -->
+
+	<script type="text/javascript">
+		$(function(){
+			var swiper = new Swiper('.swiper-container', {
+				speed: 400,
+				direction: 'vertical',
+				/*
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				},
+				*/
+				slidesPerView: 1,
+				mousewheel: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+			});
+		});
+	</script>
+</body>
+</html>

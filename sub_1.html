@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title> 작은 섬나라 일본으로 떠나다 </title>
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/default.css" />
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/ui.js"></script>
+</head>
+<body>
+
+	<!-- s: header -->
+	<header id="header_container">
+		<h1 class="logo"><a href="index.html"><img src="images/img_logo01.png" alt="작은 섬나라 일본으로 떠나다" /></a></h1>
+		<nav class="gnb_wrap">
+			<ul>
+				<li><a href="fes.html">FESTIVAL<span>FESTIVAL</span></a></li>
+				<li>
+					<a href="#none" onclick="japan.notFound()">PUBLIC_TRAFFIC<span>PUBLIC_TRAFFIC</span></a>
+					<ul>
+						<li class="on"><a href="#sub_1.html">OSAKA<span>OSAKA</span></a></li>
+						<li><a href="sub_2.html">TOKYO<span>TOKYO</span></a></li>
+						<li><a href="sub_3.html">HUKUOKA<span>HUKUOKA</span></a></li>
+					</ul>
+				</li>
+				<li><a href="food.html">FOOD<span>FOOD</span></a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- e: header -->
+
+	<!-- s: sub1 -->
+	<div id="sub1_container">
+		<!-- swiper -->
+		<div class="swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">
+					<section id="section02">
+						<div class="layer submap"><img src="images/sub1/1_ticket.png" /></div>
+						<div class="layer subtit2"><img src="images/sub1/subtit1.png" /></div>
+						<div class="layer subtxt2">
+							1일권 (2300엔) <br/>
+오사카 시영 지하철·뉴트램·버스·사철 이용 가능/JR라인 이용 불가능<br/>
+2일권 (3000엔)<br/>
+ 오사카 시영 전철·뉴트램·버스 이용 가능/JR라인, 사철 이용불가능<br/>
+<br/>
+35개 관광 명소 무료 및 25개 시설/27개 상점에서 할인 및 특전
+						</div>
+					</section>
+				</li>
+				<li class="swiper-slide">
+					<section id="section02">
+						<div class="layer submap"><img src="images/sub1/2_ticket.png" /></div>
+						<div class="layer subtit2"><img src="images/sub1/subtit2.png" /></div>
+						<div class="layer subtxt2">
+							2일권 (4000엔) / 3일권 (5200엔)<br/>
+오사카,교토, 고베, 나라, 와카야마 등 간사이 지역의 지하철, 전철, 버스 이용 가능<br/>
+JR라인, 리무진 버스, 고속 버스 유니버셜 스튜디오 재팬 버스 이용 불가능<br/>
+<br/>
+오사카 주요 관광지할인 특전 
+						</div>
+					</section>
+				</li>
+				<li class="swiper-slide">
+					<section id="section02">
+						<div class="layer submap"><img src="images/sub1/3_ticket.png" /></div>
+						<div class="layer subtit2"><img src="images/sub1/subtit3.png" /></div>
+						<div class="layer subtxt2">
+							1일권 (700엔) / 2일권 (1200엔)<br/>
+고베, 다카라즈카, 교토 본선(우메다역-교토, 고베로 이동하는 한큐라인 전철)  이용 가능<br/>
+오사카 시영 지하철, 한큐라인을 제회한 사철, JR라인 이용 불가능
+						</div>
+					</section>
+				</li>
+				<li class="swiper-slide">
+					<section id="section02">
+						<div class="layer submap"><img src="images/sub1/4_ticket.png" /></div>
+						<div class="layer subtit2"><img src="images/sub1/subtit4.png" /></div>
+						<div class="layer subtxt2">
+							1일권 (700엔)<br/>
+고베 전선(오사카 난바-고베로 이동하는 한신라인 전철) 이용 가능<br/>
+오사카 시영 지하철, 한신라인을 제외한 사철, JR라인 이용 불가능 
+						</div>
+					</section>
+				</li>
+				<li class="swiper-slide">
+					<section id="section02">
+						<div class="layer submap"><img src="images/sub1/5_ticket.png" /></div>
+						<div class="layer subtit2"><img src="images/sub1/subtit5.png" /></div>
+						<div class="layer subtxt2">
+							주중 (800엔) / 주말(600엔)<br/>
+오사카 시영 전철, 뉴트램, 버스 무제한 이용 가능<br/>
+JR라인, 사철 이용 불가능<br/>
+<br/>
+오사카 주요 관광지할인 특전 
+						</div>
+					</section>
+				</li>
+				<li class="swiper-slide">
+					<section id="section02">
+						<div class="layer submap"><img src="images/sub1/6_ticket.png" /></div>
+						<div class="layer subtit2"><img src="images/sub1/subtit6.png" /></div>
+						<div class="layer subtxt2">
+							1일권 (1500엔)<br/>
+라피트 특급열차 편도(간사이공항-난바역), 오사카 시영 지하철, 뉴트램, 버스 이용 가능<br/>
+JR라인, 사철 이용 불가능<br/>
+<br/>
+오사카 관광 명소 32곳 할인
+						</div>
+					</section>
+				</li>
+			</ul>
+			<!-- add pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+	<!-- e: sub1 -->
+
+	<script type="text/javascript">
+		$(function(){
+			var swiper = new Swiper('.swiper-container', {
+				speed: 400,
+				direction: 'vertical',
+				/*
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				},
+				*/
+				slidesPerView: 1,
+				mousewheel: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+			});
+		});
+	</script>
+</body>
+</html>
